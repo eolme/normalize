@@ -1,0 +1,31 @@
+{
+  "name": "@eolme/normalize",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "Anton Petrov",
+    "email": "im@petrov.engineer",
+    "url": "https://petrov.engineer"
+  },
+  "description": "String normalization functions",
+  "license": "MIT",
+  "keywords": [
+    "normalize",
+    "string",
+    "zalgo",
+    "trim"
+  ],
+  "homepage": "https://github.com/eolme/normalize",
+  "bugs": "https://github.com/eolme/normalize/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eolme/normalize.git"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  }
+}
