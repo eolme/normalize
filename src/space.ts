@@ -10,12 +10,12 @@ const DW = /\s+/g;
 /**
  * Normalize Unicode space symbols
  */
-export const normalizeSpace = (value: any) => {
+export const normalizeSpace = (value?: string | null) => {
   if (!value) {
     return '';
   }
 
-  return String(value)
+  return value
     .replace(CWA, ' ')
     .replace(BW, '')
     .replace(DW, ' ');

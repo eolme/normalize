@@ -5,7 +5,7 @@ import { normalizeSpace } from './space';
 /**
  * Apply all normalizations
  */
-export const normalizeValue = (value: any) => {
+export const normalizeValue = (value?: string | null) => {
   if (!value) {
     return '';
   }

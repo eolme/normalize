@@ -3,12 +3,12 @@ const normalizeUnicodeNative = String.prototype.normalize;
 /**
  * Normalize Unicode NFKD mode
  */
-export const normalizeUnicode = (value: any) => {
+export const normalizeUnicode = (value?: string | null) => {
   if (!value) {
     return '';
   }
 
-  let str = String(value);
+  let str = value;
 
   if (normalizeUnicodeNative) {
     try {

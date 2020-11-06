@@ -7,12 +7,12 @@ const LCM = /[\0-\x08\x0E-\x1F\x7F-\x84\x86-\x9F\u0300-\u034E\u0350-\u035B\u0363
 /**
  * Remove Unicode combining marks (aka Zalgo)
  */
-export const normalizeCombiningMarks = (value: any) => {
+export const normalizeCombiningMarks = (value?: string | null) => {
   if (!value) {
     return '';
   }
 
-  return String(value)
+  return value
     .replace(LCM, '')
     .replace(SCM, '$1')
 };
